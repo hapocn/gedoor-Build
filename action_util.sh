@@ -25,7 +25,7 @@ function update_info()
         git config user.email github-actions@github.com
         git commit -a -m "$APP_NAME-$APP_LATEST_TAG release"
         git push
-    fi
+    #fi
 }
 
 function webdav_upload()
