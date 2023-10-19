@@ -9,7 +9,7 @@ function version_ge() { test "$(echo "$@" | tr " " "\n" | sort -rV | head -n 1)"
 function update_info()
 {
     cd $GITHUB_WORKSPACE
-    if version_gt $APP_LATEST_TAG $APP_LAST_TAG; then
+    #if version_gt $APP_LATEST_TAG $APP_LAST_TAG; then
         sed -e 's/^/> &/' \
             -e '1i\<!--start-->' \
             -e '$a\<!--end-->' \
